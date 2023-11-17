@@ -14,7 +14,7 @@ class GameEngine {
     this.cameraOffset = cameraOffset // Offset for setting Player Sprite
 
     this.assets = { // Default Images, can be changed using "setImages"
-      scene: "./img/map_test.png", //"./img/map_test2", // USE THIS FOR TESTING MOVEMENT BLOCKING
+      scene: "./img/map_test.png", //"./img/map_test2.png", // USE THIS FOR TESTING MOVEMENT BLOCKING
       player: "./img/player_template.png"
     }
     this.sprites = []
