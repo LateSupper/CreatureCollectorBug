@@ -111,7 +111,10 @@ class Controller {
 
     this.step = () => {
       if (this.moving) {
-        if (this.mapSprite.position.x !== this.targetPosition.position && this.mapSprite.position.y !== this.targetPosition.position) {
+        if (
+            (this.targetPosition.axis == "x" && this.mapSprite.position.x !== this.targetPosition.position) ||
+            (this.targetPosition.axis == "y" && this.mapSprite.position.y !== this.targetPosition.position)
+        ) {
           if (this.keys.last === 'w') {
             this.mapSprite.position.y += this.keys.shift.pressed ? this.mapSprite.speed * 2 : this.mapSprite.speed
           }
